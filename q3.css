@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  h1 {
+    text-align: center;
+  }
+  .question {
+    margin-bottom: 15px;
+  }
+  .options {
+    margin-bottom: 10px;
+  }
+  .options input[type="radio"] {
+    margin-right: 5px;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #result {
+    margin-top: 20px;
+    font-weight: bold;
+  }

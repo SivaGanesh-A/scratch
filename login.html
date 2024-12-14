@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            text-align: center;
+            width: 300px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 80px;
+            height: auto;
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #ffc0cb;
+            color: #fff;
+            text-align: center;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: #ff9999;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-btn {
+            background-color: #90ee90;
+        }
+
+        .login-btn:hover {
+            background-color: #76c776;
+        }
+
+        .register-btn {
+            background-color: #add8e6;
+        }
+
+        .register-btn:hover {
+            background-color: #87ceeb;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #6a5acd;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="E:\projects\nriedu\src\components\assests\logo.jpg" alt="Logo">
+        </div>
+        <div class="title">Next Step Learning Strategies</div>
+
+        <!-- Login Form -->
+        <div id="login-form">
+            <p>Let's Start Our Journey</p>
+            <input required type="text" class="input-field" placeholder="Username">
+            <input required type="password" class="input-field" placeholder="Password">
+            <div class="links">
+                <a href="#">Forgot Password?</a>
+                <a href="register.html">Register Now</a>
+            </div>
+            <button class="btn login-btn" onclick="welcome()">Login</button>
+        </div>
+
+        <!-- Registration Form -->
+        <!-- <div id="register-form" class="hidden">
+            <p>Create Your Account</p>
+            <input type="text" class="input-field" placeholder="Full Name">
+            <input type="email" class="input-field" placeholder="Email">
+            <input type="text" class="input-field" placeholder="Username">
+            <input type="password" class="input-field" placeholder="Password">
+            <div class="links">
+                <a href="javascript:showLogin()">Back to Login</a>
+            </div>
+            <button class="btn register-btn" onclick="welcome()">Register</button>
+        </div> -->
+    </div>
+    <script src="stplan2.js"></script>
+</body>
+</html>

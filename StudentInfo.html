@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            text-align: center;
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #ffc0cb;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #ffc0cb;
+            color: #fff;
+        }
+
+        .btn:hover {
+            background-color: #ff9999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="E:\projects\nriedu\src\components\assests\logo.jpg" alt="Logo">
+        </div>
+        <div class="title">Next Step Learning Strategies</div>
+        <div class="subtitle">Student Information</div>
+        <input type="text" class="input-field" placeholder="Enter Student Name" id="studentName">
+        <button class="btn" onclick="getDetails()">Get Details</button>
+    </div>
+
+    <script>
+        function getDetails() {
+            const studentName = document.getElementById('studentName').value;
+            if (studentName) {
+                alert(`Fetching details for ${studentName}`);
+            } else {
+                alert('Please enter a student name.');
+            }
+        }
+    </script>
+</body>
+</html>
