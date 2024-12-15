@@ -72,6 +72,13 @@ const questions = [
     });
   
     resultDiv.textContent = `Your score: ${score} out of ${questions.length}`;
+    if (score >= 3) {
+      resultDiv.textContent +=`----------------->Badge:your badge is Congratulation, you got Gold Badge`;
+  } else if (score >= 2) {
+      resultDiv.textContent +=`----------------->Badge:your badge is Hurray, you got Silver Badge`;
+  } else {
+      resultDiv.textContent +=`----------------->Badge:your badge is Focus more on this Subject`;
+  }
   }
   
   createQuiz();
